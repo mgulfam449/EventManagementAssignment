@@ -505,7 +505,11 @@ $username = $_SESSION['username'];
 $bookings = [];
 
 // Wedding events
+<<<<<<< HEAD
 $wedding_q = mysqli_query($conn, "SELECT * FROM wedding_event WHERE username='$username'");
+=======
+$wedding_q = mysqli_query($conn, "SELECT * FROM wedding_event WHERE username='$username' AND status='approved'");
+>>>>>>> cb1bb785e6077a83d742549adc68d47fae6f423f
 while ($row = mysqli_fetch_assoc($wedding_q)) {
     $bookings[] = [
         'type' => 'Wedding Event',
@@ -521,7 +525,11 @@ while ($row = mysqli_fetch_assoc($wedding_q)) {
 }
 
 // Party events
+<<<<<<< HEAD
 $party_q = mysqli_query($conn, "SELECT * FROM party_type WHERE username='$username'");
+=======
+$party_q = mysqli_query($conn, "SELECT * FROM party_type WHERE username='$username' AND status='approved'");
+>>>>>>> cb1bb785e6077a83d742549adc68d47fae6f423f
 while ($row = mysqli_fetch_assoc($party_q)) {
     $bookings[] = [
         'type' => 'Party Event',
@@ -537,7 +545,11 @@ while ($row = mysqli_fetch_assoc($party_q)) {
 }
 
 // Corporate events
+<<<<<<< HEAD
 $cop_q = mysqli_query($conn, "SELECT * FROM cop_event WHERE username='$username'");
+=======
+$cop_q = mysqli_query($conn, "SELECT * FROM cop_event WHERE username='$username' AND status='approved'");
+>>>>>>> cb1bb785e6077a83d742549adc68d47fae6f423f
 while ($row = mysqli_fetch_assoc($cop_q)) {
     $bookings[] = [
         'type' => 'Corporate Event',
@@ -633,7 +645,11 @@ while ($row = mysqli_fetch_assoc($cop_q)) {
             <div class="card mb-5 mb-lg-0">
               <div class="card-body">
                 <h5 class="card-title text-muted text-uppercase text-center">Standard Meal</h5>
+<<<<<<< HEAD
                 <h6 class="card-price text-center">50€</h6>
+=======
+                <h6 class="card-price text-center">850/-</h6>
+>>>>>>> cb1bb785e6077a83d742549adc68d47fae6f423f
                 <h5 class="card-title text-center">per head</h5>
 
                 <hr>
@@ -657,7 +673,11 @@ while ($row = mysqli_fetch_assoc($cop_q)) {
             <div class="card mb-5 mb-lg-0">
               <div class="card-body">
                 <h5 class="card-title text-muted text-uppercase text-center">Special Meal</h5>
+<<<<<<< HEAD
                 <h6 class="card-price text-center">100€</h6>
+=======
+                <h6 class="card-price text-center">1400/-</h6>
+>>>>>>> cb1bb785e6077a83d742549adc68d47fae6f423f
                 <h5 class="card-title text-center">per head</h5>
                 <hr>
                 <ul class="fa-ul">
@@ -681,7 +701,11 @@ while ($row = mysqli_fetch_assoc($cop_q)) {
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title text-muted text-uppercase text-center">Premium Meal</h5>
+<<<<<<< HEAD
                 <h6 class="card-price text-center">250€</h6>
+=======
+                <h6 class="card-price text-center">2900/-</h6>
+>>>>>>> cb1bb785e6077a83d742549adc68d47fae6f423f
                 <h5 class="card-title text-center">per head</h5>
                 <hr>
                 <ul class="fa-ul">
